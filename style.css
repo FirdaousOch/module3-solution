@@ -1,1 +1,24 @@
+.tall-section {
+    height: 1000px; /* Hauteur pour tester le défilement */
+    background-color: #f2f2f2; /* Couleur de fond */
+    margin: 20px 0; /* Marge pour distinguer la section */
+}
+#menu-description {
+    margin-top: 20px; /* Espace au-dessus du conteneur */
+    margin-left: auto; /* Centre le conteneur */
+    margin-right: auto; /* Centre le conteneur */
+    padding: 20px; /* Espace à l'intérieur du conteneur, autour du texte */
+    background-color: #f2f2f2; /* Couleur de fond grise */
+    width: 80%; /* Largeur du conteneur */
+    box-sizing: border-box; /* Inclut le padding dans le calcul de la largeur */
+}
+
+.navbar-brand {
+    font-size: 150%; /* 75% plus grand pour le nom de l'entreprise */
+}
+
+h1 {
+    margin: 20px 0;
+    font-size: 175%; /* Titre de la page plus grand */
+}
 
