@@ -5,32 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Food, LLC</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- Optionnel : jQuery et Popper.js pour Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="stylee.css">
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Food, LLC</a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar-menu">
-                <ul class="nav navbar-nav navbar-right visible-xs">
-                    <li><a href="#" id="chicken">Chicken</a></li>
-                    <li><a href="#" id="beef">Beef</a></li>
-                    <li><a href="#" id="sushi">Sushi</a></li>
-                </ul>               
+            <a class="navbar-brand" href="#">Food, LLC</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="chicken">Chicken</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="beef">Beef</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="sushi">Sushi</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </nav>    
+    </nav>  
     <!-- Page Heading -->
     <div class="text-center">
         <h1>Our Menu</h1>
@@ -54,19 +64,20 @@
 <script>
     document.getElementById('chicken').addEventListener('click', function(e) {
         e.preventDefault();
-        document.getElementById('menu-description').innerHTML = '<p>Le poulet est un mets délicieux et polyvalent, apprécié à travers le monde pour sa chair tendre et sa capacité à absorber les saveurs. Il peut être grillé, rôti, frit, ou cuit à la vapeur, et se marie bien avec une multitude d\'épices et d\'herbes.</p>';
+        document.getElementById('menu-description').innerHTML = '<p>Le poulet est un mets délicieux et polyvalent, apprécié à travers le monde pour sa chair tendre et sa capacité à absorber les saveurs. Il peut être grillé, rôti, frit, ou cuit à la vapeur, et se marie bien avec une multitude d\'épices et d\'herbes.Le poulet est un mets délicieux et polyvalent, apprécié à travers le monde pour sa chair tendre et sa capacité à absorber les saveurs. Il peut être grillé, rôti, frit, ou cuit à la vapeur, et se marie bien avec une multitude d\'épices et d\'herbes.Le poulet est un mets délicieux et polyvalent, apprécié à travers le monde pour sa chair tendre et sa capacité à absorber les saveurs. Il peut être grillé, rôti, frit, ou cuit à la vapeur, et se marie bien avec une multitude d\'épices et d\'herbes.Le poulet est un mets délicieux et polyvalent, apprécié à travers le monde pour sa chair tendre et sa capacité à absorber les saveurs. Il peut être grillé, rôti, frit, ou cuit à la vapeur, et se marie bien avec une multitude d\'épices et d\'herbes.Le poulet est un mets délicieux et polyvalent, apprécié à travers le monde pour sa chair tendre et sa capacité à absorber les saveurs. Il peut être grillé, rôti, frit, ou cuit à la vapeur, et se marie bien avec une multitude d\'épices et d\'herbes.Le poulet est un mets délicieux et polyvalent, apprécié à travers le monde pour sa chair tendre et sa capacité à absorber les saveurs. Il peut être grillé, rôti, frit, ou cuit à la vapeur, et se marie bien avec une multitude d\'épices et d\'herbes.Le poulet est un mets délicieux et polyvalent, apprécié à travers le monde pour sa chair tendre et sa capacité à absorber les saveurs. Il peut être grillé, rôti, frit, ou cuit à la vapeur, et se marie bien avec une multitude d\'épices et d\'herbes.Le poulet est un mets délicieux et polyvalent, apprécié à travers le monde pour sa chair tendre et sa capacité à absorber les saveurs. Il peut être grillé, rôti, frit, ou cuit à la vapeur, et se marie bien avec une multitude d\'épices et d\'herbes.Le poulet est un mets délicieux et polyvalent, apprécié à travers le monde pour sa chair tendre et sa capacité à absorber les saveurs. Il peut être grillé, rôti, frit, ou cuit à la vapeur, et se marie bien avec une multitude d\'épices et d\'herbes.Le poulet est un mets délicieux et polyvalent, apprécié à travers le monde pour sa chair tendre et sa capacité à absorber les saveurs. Il peut être grillé, rôti, frit, ou cuit à la vapeur, et se marie bien avec une multitude d\'épices et d\'herbes.</p>';
     });
     
     document.getElementById('beef').addEventListener('click', function(e) {
         e.preventDefault();
-        document.getElementById('menu-description').innerHTML = '<p>Le bœuf, avec sa richesse et sa profondeur de goût, occupe une place de choix dans la cuisine de nombreuses cultures. De l\'entrecôte grillée au bourguignon mijoté lentement, le bœuf offre une gamme impressionnante de textures et de saveurs.</p>';
+        document.getElementById('menu-description').innerHTML = '<p>Le bœuf, avec sa richesse et sa profondeur de goût, occupe une place de choix dans la cuisine de nombreuses cultures. De l\'entrecôte grillée au bourguignon mijoté lentement, le bœuf offre une gamme impressionnante de textures et de saveurs.Le bœuf, avec sa richesse et sa profondeur de goût, occupe une place de choix dans la cuisine de nombreuses cultures. De l\'entrecôte grillée au bourguignon mijoté lentement, le bœuf offre une gamme impressionnante de textures et de saveurs.Le bœuf, avec sa richesse et sa profondeur de goût, occupe une place de choix dans la cuisine de nombreuses cultures. De l\'entrecôte grillée au bourguignon mijoté lentement, le bœuf offre une gamme impressionnante de textures et de saveurs.Le bœuf, avec sa richesse et sa profondeur de goût, occupe une place de choix dans la cuisine de nombreuses cultures. De l\'entrecôte grillée au bourguignon mijoté lentement, le bœuf offre une gamme impressionnante de textures et de saveurs.Le bœuf, avec sa richesse et sa profondeur de goût, occupe une place de choix dans la cuisine de nombreuses cultures. De l\'entrecôte grillée au bourguignon mijoté lentement, le bœuf offre une gamme impressionnante de textures et de saveurs.Le bœuf, avec sa richesse et sa profondeur de goût, occupe une place de choix dans la cuisine de nombreuses cultures. De l\'entrecôte grillée au bourguignon mijoté lentement, le bœuf offre une gamme impressionnante de textures et de saveurs.Le bœuf, avec sa richesse et sa profondeur de goût, occupe une place de choix dans la cuisine de nombreuses cultures. De l\'entrecôte grillée au bourguignon mijoté lentement, le bœuf offre une gamme impressionnante de textures et de saveurs.Le bœuf, avec sa richesse et sa profondeur de goût, occupe une place de choix dans la cuisine de nombreuses cultures. De l\'entrecôte grillée au bourguignon mijoté lentement, le bœuf offre une gamme impressionnante de textures et de saveurs.Le bœuf, avec sa richesse et sa profondeur de goût, occupe une place de choix dans la cuisine de nombreuses cultures. De l\'entrecôte grillée au bourguignon mijoté lentement, le bœuf offre une gamme impressionnante de textures et de saveurs.Le bœuf, avec sa richesse et sa profondeur de goût, occupe une place de choix dans la cuisine de nombreuses cultures. De l\'entrecôte grillée au bourguignon mijoté lentement, le bœuf offre une gamme impressionnante de textures et de saveurs.Le bœuf, avec sa richesse et sa profondeur de goût, occupe une place de choix dans la cuisine de nombreuses cultures. De l\'entrecôte grillée au bourguignon mijoté lentement, le bœuf offre une gamme impressionnante de textures et de saveurs.</p>';
     });
     
     document.getElementById('sushi').addEventListener('click', function(e) {
         e.preventDefault();
-        document.getElementById('menu-description').innerHTML = '<p>Le sushi, une icône de la cuisine japonaise, combine harmonieusement le riz vinaigré avec divers ingrédients frais tels que le poisson cru, les légumes et parfois des fruits. C\'est un art culinaire qui enchante autant les yeux que le palais.</p>';
+        document.getElementById('menu-description').innerHTML = '<p>Le sushi, une icône de la cuisine japonaise, combine harmonieusement le riz vinaigré avec divers ingrédients frais tels que le poisson cru, les légumes et parfois des fruits. C\'est un art culinaire qui enchante autant les yeux que le palais.Le sushi, une icône de la cuisine japonaise, combine harmonieusement le riz vinaigré avec divers ingrédients frais tels que le poisson cru, les légumes et parfois des fruits. C\'est un art culinaire qui enchante autant les yeux que le palais.Le sushi, une icône de la cuisine japonaise, combine harmonieusement le riz vinaigré avec divers ingrédients frais tels que le poisson cru, les légumes et parfois des fruits. C\'est un art culinaire qui enchante autant les yeux que le palais.Le sushi, une icône de la cuisine japonaise, combine harmonieusement le riz vinaigré avec divers ingrédients frais tels que le poisson cru, les légumes et parfois des fruits. C\'est un art culinaire qui enchante autant les yeux que le palais.Le sushi, une icône de la cuisine japonaise, combine harmonieusement le riz vinaigré avec divers ingrédients frais tels que le poisson cru, les légumes et parfois des fruits. C\'est un art culinaire qui enchante autant les yeux que le palais.Le sushi, une icône de la cuisine japonaise, combine harmonieusement le riz vinaigré avec divers ingrédients frais tels que le poisson cru, les légumes et parfois des fruits. C\'est un art culinaire qui enchante autant les yeux que le palais.Le sushi, une icône de la cuisine japonaise, combine harmonieusement le riz vinaigré avec divers ingrédients frais tels que le poisson cru, les légumes et parfois des fruits. C\'est un art culinaire qui enchante autant les yeux que le palais.Le sushi, une icône de la cuisine japonaise, combine harmonieusement le riz vinaigré avec divers ingrédients frais tels que le poisson cru, les légumes et parfois des fruits. C\'est un art culinaire qui enchante autant les yeux que le palais.Le sushi, une icône de la cuisine japonaise, combine harmonieusement le riz vinaigré avec divers ingrédients frais tels que le poisson cru, les légumes et parfois des fruits. C\'est un art culinaire qui enchante autant les yeux que le palais.Le sushi, une icône de la cuisine japonaise, combine harmonieusement le riz vinaigré avec divers ingrédients frais tels que le poisson cru, les légumes et parfois des fruits. C\'est un art culinaire qui enchante autant les yeux que le palais.Le sushi, une icône de la cuisine japonaise, combine harmonieusement le riz vinaigré avec divers ingrédients frais tels que le poisson cru, les légumes et parfois des fruits. C\'est un art culinaire qui enchante autant les yeux que le palais.</p>';
     });
     </script>
     
 </html>
+
 
